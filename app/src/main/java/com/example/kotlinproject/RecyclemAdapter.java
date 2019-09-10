@@ -44,6 +44,9 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 if (title.equals(AppConstant.LIST_TITLE1)) {
                     Intent intent = new Intent(mContext, KotlinMainActivity.class);
                     mContext.startActivity(intent);
+                } if (title.equals(AppConstant.LIST_TITLE0)) {
+                    Intent intent = new Intent(mContext, FlashViewActivity.class);
+                    mContext.startActivity(intent);
                 }
             }
         });

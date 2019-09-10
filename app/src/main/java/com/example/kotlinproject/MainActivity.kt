@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initRecycleView() {
+        mList.add(AppConstant.LIST_TITLE0)
         mList.add(AppConstant.LIST_TITLE1)
 
         recyclerView?.setLayoutManager(LinearLayoutManager(this))
