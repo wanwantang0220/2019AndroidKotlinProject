@@ -1,11 +1,11 @@
-package com.example.kotlinproject
+package com.example.kotlinproject.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.kotlinproject.R
 import com.example.kotlinproject.view.FlashView
 
 class FlashViewActivity : AppCompatActivity() {
-
 
     lateinit var flashView: FlashView
 
@@ -14,7 +14,9 @@ class FlashViewActivity : AppCompatActivity() {
         setContentView(R.layout.activity_flash_view)
 
         flashView = findViewById(R.id.flashView)
-        flashView.setImage(R.drawable.flash)
         flashView.start()
+
+
+
     }
 }

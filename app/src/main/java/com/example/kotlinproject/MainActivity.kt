@@ -27,10 +27,13 @@ class MainActivity : AppCompatActivity() {
     private fun initRecycleView() {
         mList.add(AppConstant.LIST_TITLE0)
         mList.add(AppConstant.LIST_TITLE1)
+        mList.add(AppConstant.LIST_TITLE2)
+        mList.add(AppConstant.LIST_TITLE3)
+        mList.add(AppConstant.LIST_TITLE4)
 
-        recyclerView?.setLayoutManager(LinearLayoutManager(this))
+        recyclerView.setLayoutManager(LinearLayoutManager(this))
         val adpter = RecyclemAdapter(this)
         adpter.setData(mList)
-        recyclerView?.setAdapter(adpter)
+        recyclerView.setAdapter(adpter)
     }
 }

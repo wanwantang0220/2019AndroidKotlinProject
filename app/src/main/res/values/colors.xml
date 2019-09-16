@@ -18,9 +18,6 @@
     <color name="page3_start_color">#75539F</color>
     <color name="page3_end_color">#A87CB7</color>
 
-    <color name="white">#ffffff</color>
-    <color name="tranfer">#00000000</color>
-
     <color name="gray_light">#f2f2f2</color>
     <color name="gray_font_dark">#646464</color>
     <color name="black">#202020</color>
@@ -42,7 +39,9 @@
     <color name="scroll_bar_thumb_bg">#00b4aa</color>
 
     <color name="black_overlay">#66000000</color>
-    <color name="transparent">@android:color/transparent</color>
     <color name="gray">#C4C4C4</color>
 
+    <color name="white">#FFFFFF</color>
+    <color name="whiteTransparent">#88FFFFFF</color>
+    <color name="transparent">#00000000</color>
 </resources>

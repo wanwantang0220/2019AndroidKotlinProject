@@ -10,6 +10,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.kotlinproject.activity.FlashViewActivity;
+import com.example.kotlinproject.activity.KeyframeLayoutActivity;
+import com.example.kotlinproject.activity.LaunchWxActivity;
+import com.example.kotlinproject.activity.XMSportActivity;
 import com.example.kotlinproject.app.AppConstant;
 
 import java.util.ArrayList;
@@ -44,8 +48,17 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 if (title.equals(AppConstant.LIST_TITLE1)) {
                     Intent intent = new Intent(mContext, KotlinMainActivity.class);
                     mContext.startActivity(intent);
-                } if (title.equals(AppConstant.LIST_TITLE0)) {
+                }else if (title.equals(AppConstant.LIST_TITLE0)) {
                     Intent intent = new Intent(mContext, FlashViewActivity.class);
+                    mContext.startActivity(intent);
+                }else if (title.equals(AppConstant.LIST_TITLE2)) {
+                    Intent intent = new Intent(mContext, LaunchWxActivity.class);
+                    mContext.startActivity(intent);
+                }else if (title.equals(AppConstant.LIST_TITLE3)) {
+                    Intent intent = new Intent(mContext, KeyframeLayoutActivity.class);
+                    mContext.startActivity(intent);
+                }else if (title.equals(AppConstant.LIST_TITLE4)) {
+                    Intent intent = new Intent(mContext, XMSportActivity.class);
                     mContext.startActivity(intent);
                 }
             }
